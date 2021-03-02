@@ -29,11 +29,11 @@ $('#posts-carousel-3col').owlCarousel({
 $('#posts-carousel-3col').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
 $('#posts-carousel-3col').find('.owl-next').html('<i class="fa fa-angle-right"></i>'); 
 
-$('#image-slider').owlCarousel({     
+$('#image-slider').owlCarousel({
     navigation : true, // Show next and prev buttons
-    slideSpeed : 400,
-    paginationSpeed : 400,
-    singleItem:true     
+    slideSpeed : 600,
+    paginationSpeed : 600,
+    singleItem:true
 });   
 $('#image-slider').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
 $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
