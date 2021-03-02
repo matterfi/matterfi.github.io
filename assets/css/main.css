@@ -941,7 +941,7 @@ figure{
         margin-bottom:40px
     }
     .carousel-inner{
-        height:175px
+        height:175px;
     }
     .carousel-indicators{
         display:none
