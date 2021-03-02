@@ -68,9 +68,9 @@ counts:
   # (windows powershell: dir -Recurse -Include *.ts,*.tsx -Exclude *node_modules* | Get-Content | Measure-Object -Line)
   code_lines: 459,861
   # https://github.com/Open-Transactions/opentxs
-  commits: 5,844
+  commits: 5,910
   # https://github.com/Open-Transactions/opentxs/graphs/contributors
-  contributors: 29
+  contributors: 33
 
 # Team Information
 team:

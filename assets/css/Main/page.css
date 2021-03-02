@@ -6,14 +6,14 @@
 }
 
 .carousel-text-title {
-    background: rgba(35, 49, 56, 0.55);
+    background: rgba(35, 49, 56, 0.95);
     border-radius: 25px;
     margin: auto;
     width: 40%
 }
 
 .carousel-text-title-large {
-    background: rgba(35, 49, 56, 0.45);
+    background: rgba(35, 49, 56, 0.95);
     border-radius: 25px;
     margin: auto;
     width: 60%
