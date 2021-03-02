@@ -214,6 +214,18 @@
         font-size: 32px;
     }
 
+    .homeSlideTxt-large {
+        font-size:14px;
+    }
+
+    .homeSlideTxt-large br {
+        display: none;
+    }
+
+    .homeSlideTxt br {
+        display: none;
+    }
+
     .hero-content-v2{
         margin-top:0;
         margin-bottom: 30px;
@@ -240,6 +252,10 @@
 @media (max-width: 480px){
     .textTitle {
         font-size:24px;
+    }
+
+    .homeSlideTxt-large {
+        font-size:12px;
     }
 
     .hero-content-v2{

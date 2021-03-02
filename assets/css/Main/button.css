@@ -326,3 +326,13 @@
     min-width:186px;
     font-size:21px
 }
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* Small devices */
+@media (max-width: 640px) {
+    .btn-lg {
+        font-size:12px;
+        padding:10px 26px;
+    }
+}
