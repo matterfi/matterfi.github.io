@@ -76,7 +76,7 @@ counts:
 team:
   member_01:
     name: Tim Rocho
-    title: CEO
+    title: President
     catchphrase: Great Ideas are plentiful, its execution that really Matters.
     background: 'Relentlessly focus on customer needs and you may be successful.'
     twitter: null
@@ -85,7 +85,7 @@ team:
     linkedin: https://www.linkedin.com/in/timrocho/
   member_02:
     name: Mehow Powers
-    title: President
+    title: CEO
     catchphrase: "Theft and fraud don’t have to be possible."
     background: "When I was younger I worked as a consultant hacking corporate machines, if you think your electronics and financial systems are secure, do I have news for you. Now I’m building technology that eliminates theft and fraud so that these issues can never happen again."
     twitter: null

@@ -2,6 +2,21 @@
     color: #1E9CD7;
     font-size:48px;
     font-weight:bold;
+    text-shadow: 2px 2px 2px #222;
+}
+
+.carousel-text-title {
+    background: rgba(35, 49, 56, 0.55);
+    border-radius: 25px;
+    margin: auto;
+    width: 40%
+}
+
+.carousel-text-title-large {
+    background: rgba(35, 49, 56, 0.45);
+    border-radius: 25px;
+    margin: auto;
+    width: 60%
 }
 
 .contact-form-sub-button {
@@ -68,7 +83,9 @@
 }
 
 .service-box .service-content {
-    padding-left:48px
+    padding-left:48px;
+    word-break: break-word;
+    white-space: normal;
 }
 
 .service-box .service-content h4 {
@@ -142,6 +159,13 @@
     .service-box .service-content h4{
         font-size:14px
     }
+
+    .carousel-text-title {
+        width: 60%
+    }
+    .carousel-text-title-large {
+        width: 70%
+    }
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -165,6 +189,13 @@
         display: block;
         text-align: center;
         width: 50%;
+    }
+
+    .carousel-text-title {
+        width: 70%
+    }
+    .carousel-text-title-large {
+        width: 80%
     }
 }
 
