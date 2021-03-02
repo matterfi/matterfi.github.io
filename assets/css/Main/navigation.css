@@ -430,8 +430,8 @@ ul.nav-tabs li a{
     margin: auto;
     display: block;
     text-align: center;
-    color: #ccc;
-    text-shadow: 2px 2px 2px #000;
+    color: #111;
+    text-shadow: 2px 2px 2px #ddd;
 }
 
 /* ----------------------------------------------------------------------------------------- */
