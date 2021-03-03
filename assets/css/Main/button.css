@@ -300,7 +300,9 @@
 .btn-lg {
     font-size:18px;
     min-width:198px;
-    padding:15px 11px
+    padding:15px 11px;
+    border-radius: 12px;
+    border: 2pt solid #23a8e6;
 }
 
 .learn-more .btn-lg {
