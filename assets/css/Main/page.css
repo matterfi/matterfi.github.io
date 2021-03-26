@@ -238,6 +238,7 @@
 
     .homeSlideTxt-large {
         font-size:14px;
+        line-height: 18px;
     }
 
     .homeSlideTxt {
@@ -264,11 +265,12 @@
 /* Small devices */
 @media (max-width: 640px) {
     .textTitle {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .homeSlideTxt-large {
         font-size:14px;
+        line-height: 20px;
     }
 
     .homeSlideTxt-large br {
@@ -305,6 +307,7 @@
 
     .homeSlideTxt-large {
         font-size:12px;
+        line-height: 18px;
     }
 
     .hero-content-v2{
