@@ -479,10 +479,11 @@ ul.nav-tabs li a{
       margin: 0px;
     }
 
-    .navbar-collapse {
+    /*.navbar-collapse {
         border: 2px solid #5d8eb8;
         border-radius: 5%;
     }
+    */
 
     .navbar-brand img {
         max-width:200px;
