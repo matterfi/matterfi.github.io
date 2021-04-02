@@ -8,16 +8,18 @@
     <meta name='mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-status-bar-style' content='black'> <!-- black | black-translucent | default -->
-    <meta name="author" content="{{ site.company.name }}">
+    <link rel='manifest' href='{{ BASE_PATH }}/web-manifest.json'>
+    <link rel='canonical' href="https://matterfi.com" />
+    <meta name='theme-color' content="#1E9CD7">
     <title>{{ page.title }}</title>
     {% if page.tagline %}<meta name="description" content="{{ page.tagline }}">{% endif %}
     
 <!-- Used in Mobile/Social link sharing generated preview https://ogp.me/ -->
-    <meta property="image" content="{{ BASE_PATH }}/assets/images/social-img.png" />
-    <meta property="og:image" content="{{ BASE_PATH }}/assets/images/social-img.png" />
-    <link rel='canonical' href="https://matterfi.com" />
-    <link rel='manifest' href='{{ BASE_PATH }}/web-manifest.json'>
-    <meta name='theme-color' content="#1E9CD7">
+    <meta name="image" property="og:image" content="{{ BASE_PATH }}/assets/images/social-img.png" />
+    <meta name="title" property="og:title" content="{{ site.title }}">
+    <meta name="author" property="og:author" content="{{ site.company.name }}">
+    <meta property="og:description" content="{{ site.tagline }}">
+    <meta property="og:url" content="{{ BASE_PATH }}">
     <!-- Icons -->
     <link rel='icon' type='image/png' href='{{ BASE_PATH }}/assets/images/icons/32.png'>
     <link rel='icon' sizes='192x192' href='{{ BASE_PATH }}/assets/images/icons/192.png'>
@@ -31,10 +33,6 @@
         <meta name="twitter:description" content="{{ site.tagline }}" />
         <meta name="twitter:image" content="{{ BASE_PATH }}/assets/images/icons/192.png" />
     {% endif %}
-    <!-- facebook link share -->
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.tagline }}">
-    <meta property="og:url" content="{{ BASE_PATH }}">
 
 <!-- Bots -->
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
