@@ -15,9 +15,9 @@
     {% if page.tagline %}<meta name="description" content="{{ page.tagline }}">{% endif %}
     
 <!-- Used in Mobile/Social link sharing generated preview https://ogp.me/ -->
-    <meta name="image" property="og:image" content="{{ BASE_PATH }}/assets/images/social-image.png" />
+    <meta name="image" property="og:image" content="{{ BASE_PATH }}/assets/images/{{ site.company.image }}" />
     <meta name="title" property="og:title" content="{{ site.title }}">
-    <meta name="author" property="og:author" content="{{ site.company.name }}">
+    <meta name="author" content="{{ site.company.name }}">
     <meta property="og:description" content="{{ site.tagline }}">
     <meta property="og:url" content="{{ BASE_PATH }}">
     <!-- Icons -->
