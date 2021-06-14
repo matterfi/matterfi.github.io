@@ -393,49 +393,60 @@ keywords: crypto, wallet, investing, app, matterfi
       <div class="col-md-8">
         <h3 class="title-head text-center">Get in Touch</h3>
         <form name="contact" id="contact" class="contact-form" data-toggle="validator" action="https://formspree.io/f/mleolekp" method="POST">
-          <div name="formfields">
+          <!-- <div name="formfields"> -->
             <div class="row">
               <!-- Name -->
               <div class="col-sm-4"><div class="form-group">
                 <i class="contact-icon fa fa-user"></i>
-                <input autocomplete="off" name="name" type="text" class="form-control" id="name" placeholder="Full Name" required data-error="Please enter your name">
+                <input autocomplete="off" name="name" type="text" class="form-control" id="name" placeholder="Full Name" data-error="Please enter your name" required="required">
                 <div class="help-block with-errors"></div>
               </div></div>
               <!-- Email -->
               <div class="col-sm-4"><div class="form-group">
                 <i class="contact-icon fa fa-envelope-o"></i>
-                <input autocomplete="off" name="_replyto" type="email" class="form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                <input autocomplete="off" name="_replyto" type="email" class="form-control" id="email" placeholder="Email" data-error="Please enter your email" required="required">
                 <div class="help-block with-errors"></div>
               </div></div>
               <!-- Subject -->
               <div class="col-sm-4"><div class="form-group">
                 <i class="contact-icon fa fa-pencil-square-o"></i>
-                <input autocomplete="off" name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required data-error="Please enter your Subject">
+                <input autocomplete="off" name="subject" type="text" class="form-control" id="subject" placeholder="Subject" data-error="Please enter your Subject" required="required">
                 <div class="help-block with-errors"></div>
               </div></div>
               <!-- Message -->
               <div class="col-sm-12"><div class="form-group">
-                <textarea autocomplete="off" name="message" id="message" rows="8" placeholder="Message" required data-error="Please enter your message"></textarea>
+                <textarea autocomplete="off" name="message" id="message" rows="8" placeholder="Message" data-error="Please enter your message" required="required"></textarea>
                 <div class="help-block with-errors"></div>
               </div></div>
-            </div>
+              <!-- Error handler -->
+              <span class="showerror" aria-live="polite"></span>
+
+            <!-- </div> -->
             <!-- Submit Button -->
-            <div class="contact-form-sub-button">
-              <input name="submit_but" type="submit" id="form-submit" class="btn btn-common btn-form-submit" onclick="submit_form();" value="Send Message" />
-            </div>
+              <div class="contact-form-sub-button">
+                <input name="submit_but" type="submit" id="form-submit" class="btn btn-common btn-form-submit" onclick="submit_form();" value="Send Message" />
+              </div>
           </div>
         </form>
       </div>
       <!-- Form Action -->
       <script>
-        //window.onload = function() {
-        //  document.getElementById('contact').reset();
-        //}
-
         function submit_form() {
-          alert("Thank you for getting in touch. Be sure to check for a contact notification email.");
-          document.getElementById('contact').submit();
-          document.getElementById('contact').hidden = true;
+          const email = document.getElementById('_replyto');
+          const emailError = document.querySelector('#mail + span.error');
+          var is_valid_input = false;
+          /* Start checking form fields for validity */
+          if (email.checkValidity()) {
+            is_valid_input = true;
+          } else {
+            alert("Please enter a valid Email address.");
+          }
+          /* Ensure that all required fields are filled in. */
+          if (is_valid_input) {
+            alert("Thank you for getting in touch. Be sure to check for a contact notification email.");
+            document.getElementById('contact').submit();
+            document.getElementById('contact').hidden = true;
+          }
           //document.getElementById('contact').reset();
           return false;
         }
