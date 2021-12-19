@@ -1,433 +1,503 @@
 ---
 layout: index
-title: Helium Jekyll
-tagline: Bootstrap 4 UI kit for Jekyll
+title: MatterFi
+tagline: A Crypto Wallet Manager. Great Ideas are plentiful, its execution that really Matters.
+tags: [wallet, crypto, money, investing, app, matterfi]
 css: 
-js: sliders.js
-keywords: helium, jekyll, bootstrap, UI, kit
-canonical: https://heliumjk.github.io
+img: 
+img-mobile: social-image.png
+js: index.js
+keywords: crypto, wallet, investing, app, matterfi
 ---
 {% include JB/setup %}
+
 <!-- Content Area Start -->
 <div id="content">
-      <!-- sliders -->
-      <div id="sliders">
-        <div class="full-width">
-          <!-- light slider -->
-          <div id="light-slider" class="carousel slide">
-            <div id="carousel-area">
-              <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-slider" data-slide-to="1"></li>
-                  <li data-target="#carousel-slider" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <img src="{{ BASE_PATH }}/assets/images/slider/bg-1.jpg" alt="">
-                    <div class="carousel-caption">
-                      <h3 class="slide-title animated fadeInDown"><span class="text-primary">Helium </span> - Bootstrap 4 UI Kit</h3>
-                      <h5 class="slide-text animated fadeIn">Bootstrap 4 based theme ported for Jekyll and GitHub Pages.</h5>
-                      <a href="#features" class="btn btn-lg btn-default-filled animated fadeInUp">Get Started</a>
-                      <a href="https://github.com/heliumjk/heliumjk.github.io/" class="btn btn-lg btn-common animated fadeInUp">Learn More</a>
-                    </div>
+
+  <!-- Header Slides -->
+  <div id="sliders">
+    <div class="">
+      <div id="light-slider" class="carousel slide home-slider-show">
+        <div id="carousel-area">
+          <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+            <!-- Slider Pos Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-slider" data-slide-to="1"></li>
+              <li data-target="#carousel-slider" data-slide-to="2"></li>
+              <li data-target="#carousel-slider" data-slide-to="3"></li>
+            </ol>
+            <!-- Slider 1 -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="home-slider-img" src="{{ BASE_PATH }}/assets/images/sales_points/bg-1.jpg" alt="">
+                <div class="carousel-gradient"></div>
+                <div class="carousel-caption">
+                  <div class = "carousel-text-title">
+                    <h3 class="animated fadeInDown"><span class="textTitle">MatterFi</span> </h3>
+                    <h5 class="slide-text animated fadeIn"><span class="homeSlideTxt">Simplify financial matters.</span></h5>
+                    <a href="#contact-us" class="btn btn-lg btn-default-filled animated fadeInUp">get in touch</a>
                   </div>
-                  <div class="carousel-item">
-                    <img src="{{ BASE_PATH }}/assets/images/slider/bg-2.jpg" alt="">
-                    <div class="carousel-caption">
-                      <h3 class="slide-title animated fadeInDown"><span class="text-primary">Scrolling</span> Features</h3>
-                      <h5 class="slide-text animated fadeIn">Try using your phone and slide sections (like blog posts below) and use your finger to scroll through the sections.</h5>
-                      <a href="https://github.com/heliumjk/heliumjk.github.io/" class="btn btn-lg btn-default-filled animated fadeInUp">Download Now</a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="{{ BASE_PATH }}/assets/images/slider/bg-3.jpg" alt="">
-                    <div class="carousel-caption">
-                      <h3 class="slide-title animated fadeInDown"><span class="text-primary">100+ </span> UI Blocks & Components</h3>
-                      <h5 class="slide-text animated fadeIn">Benefits in developing your project with more than 100 blocks available.</h5>
-                      <a href="#features" class="btn btn-lg btn-default-filled animated fadeInUp">Get Started</a>
-                      <a href="https://github.com/heliumjk/heliumjk.github.io/" class="btn btn-lg btn-common animated fadeInUp">Download</a>
-                    </div>
+                  <!--
+                  <a href="/papers/2020/11/05/white-paper" class="btn btn-lg btn-common animated fadeInUp">Learn More</a>
+                  -->
+                </div>
+              </div>
+              <!-- Slider 2 -->
+              <div class="carousel-item">
+                <img class="home-slider-img" src="{{ BASE_PATH }}/assets/images/sales_points/bg-2.jpg" alt="">
+                <div class="carousel-gradient"></div>
+                <div class="carousel-caption">
+                  <div class = "carousel-text-title">
+                    <h3 class="animated fadeInDown"><span class="textTitle">Built on Open Transactions</span> </h3>
+                    <h5 class="slide-text animated fadeIn"><span class="homeSlideTxt">
+                      Financial instruments for Bitcoin</br>
+                      written in 2010.
+                    </span></h5>
+                    <a href="http://www.opentransactions.org/open-transactions.pdf" class="btn btn-lg btn-default-filled animated fadeInUp">read the whitepaper</a>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
-                  <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
-                  <span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+              </div>
+              <!-- Slider 3 -->
+              <div class="carousel-item">
+                <img class="home-slider-img" src="{{ BASE_PATH }}/assets/images/sales_points/bg-3.jpg" alt="">
+                <div class="carousel-gradient"></div>
+                <div class="carousel-caption">
+                  <div class = "carousel-text-title">
+                    <h3 class="animated fadeInDown"><span class="textTitle">
+                      Simple and Secure<br>
+                      User Accounts
+                    </span></h3>
+                    <h5 class="slide-text animated fadeIn"><span class="homeSlideTxt-large">
+                      Reusable encrypted payment<br>
+                      codes extended with a RFC<br>
+                      simplify account handling.
+                    </span></h5>
+                    <a href="https://github.com/OpenBitcoinPrivacyProject/rfc/blob/master/obpp-05.mediawiki" class="btn btn-lg btn-default-filled animated fadeInUp">learn more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slider 4 -->
+              <div class="carousel-item">
+                <img class="home-slider-img" src="{{ BASE_PATH }}/assets/images/sales_points/bg-4.jpg" alt="">
+                <div class="carousel-gradient"></div>
+                <div class="carousel-caption">
+                  <div class = "carousel-text-title">
+                    <h3 class="animated fadeInDown"><span class="textTitle">
+                      Limitless potential.
+                    </span></h3>
+                    <h5 class="slide-text animated fadeIn"><span class="homeSlideTxt-large">
+                      Our inline messaging and payment</br>
+                      codes allow simple user actions to</br>
+                      Create complex transactions. Users</br>
+                      can customize and we’ll eat the world.
+                    </span></h5>
+                    <!--
+                    <a href="http://www.opentransactions.org/wiki/index.php?title=Main_Page#Financial_Instruments" class="btn btn-lg btn-default-filled animated fadeInUp">Learn More</a>
+                    -->
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- Slider Navigation -->
+            <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+              <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+              <span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
-      <!-- End sliders -->
-                        
-            
-      <div class="mb-60"></div>
-	<div id="features" class="container">
-	<!-- SERVICES -->
-            <div class="sub-title">
-              <span>Features</span>
-            </div>
-            <div class="row">
-              <!-- Start Service Icon 1 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="service-box">
-                  <div class="service-icon">
-                    <i class="fa fa-cogs"></i>
-                  </div>
-                  <div class="service-content">
-                    <h4><a href="#">Easy to Customize</a></h4>
-                    <p>
-                      Thanks to the basic knowledge of HTML CSS and JavaScript languages you can quickly change this theme according to your needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Service Icon 1 -->
-
-              <!-- Start Service Icon 2 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="service-box">
-                  <div class="service-icon">
-                    <i class="fa fa-cubes"></i>
-                  </div>
-                  <div class="service-content">
-                    <h4><a href="#">100+ Components</a></h4>
-                    <p>
-                      Thanks to the multitude of available blocks, you will be able to create professional layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Service Icon 2 -->
-
-              <!-- Start Service Icon 3 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="service-box">
-                  <div class="service-icon">
-                    <i class="fa fa-tachometer"></i>
-                  </div>
-                  <div class="service-content">
-                    <h4><a href="#">Super Fast</a></h4>
-                    <p>
-                      By using Jekyll as a preprocessor you will have a tremendous result in terms of loading speeds.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Service Icon 3 -->
-
-              <!-- Start Service Icon 4 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="service-box">
-                  <div class="service-icon">
-                    <i class="fa fa-check"></i>
-                  </div>
-                  <div class="service-content">
-                    <h4><a href="#">Clean Design</a></h4>
-                    <p>
-                      Helium is designed to be clean and pleasant to navigate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Service Icon 4 -->
-
-              <!-- Start Service Icon 5 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="service-box">
-                  <div class="service-icon">
-                    <i class="fa fa-flash"></i>
-                  </div>
-                  <div class="service-content">
-                    <h4><a href="#">Bootstrap 4 UI Kit</a></h4>
-                    <p>
-                      This theme uses the latest bootstrap framework 4 to have a modern, well-structured, versatile layout.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Service Icon 5 -->
-              
-              <!-- Start Service Icon 6 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="service-box">
-                  <div class="service-icon">
-                    <i class="fa fa-hand-pointer-o"></i>
-                  </div>
-                  <div class="service-content">
-                    <h4><a href="#">Advanced Features</a></h4>
-                    <p>
-                      Systems like disqus, google AdSense, google analytics, Google maps are integrated.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Service Icon 6 -->
-            </div>
-	    </div>
-            <div class="mb-60"></div>
-	
-	<!-- HEADER -->
-      <div class="header-style-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <figure>
-                <img src="{{ BASE_PATH }}/assets/images/bg/hero-2.png" alt="">
-              </figure>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="hero-content-v2">
-                <h3>100+ UI Components <strong>Ready for any web projects</strong></h3>
-                <a href="{{ BASE_PATH }}/components" class="btn btn-lg btn-default-filled animated fadeInUp">Explore All</a>
-              </div>
-            </div>
+    </div>
+  </div>
+                                
+  <!-- Service Features -->
+  <div class="mb-60"></div>
+  <div id="features" class="container">
+    <div class="row">
+      <!-- Start Service Icon 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fa fa-cogs"></i>
           </div>
-        </div>
-      </div>	
-	<!-- END HEADER -->
-            <div class="mb-60"></div>
-	
-      <div class="container">
-        <h4 class="sub-title space-left">Mobile scroll blog carousel</h4>
-      </div>
-
-      <!-- posts carousel -->
-      <section id="blog">
-        <div class="container">                              
-          <div id="posts-carousel" class="owl-carousel">
-           {% for post in site.posts %}     
-            <div class="blog-block blog block carousel-post">
-             {% if post.img %}           
-              <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="">
-             {% endif %}           
-              <h5>{{ post.title }}</h5>
-              <p>{{ post.excerpt }}</p>
-              <a href="{{ BASE_PATH }}{{ post.url }}">Full Article <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-           {% endfor %}     
-          </div>              
-        </div>
-      </section>
-      
-      <div class="mb-60"></div>
-      <div class="container">
-        <h4 class="sub-title space-left">Google AD Sense sample</h4>
-      </div>	
-	 <div class="container">
-	      {% include ads-block.html %}
-	 </div>		 
-      <div class="mb-60"></div>	
-      <div id="counter">
-        <div class="container">
-          <h4 class="sub-title">Counters</h4>
-          <div class="row count-to-sec">
-            <div class="col-md-3 col-sm-6 count-one">
-              <span class="icon"><i class="fa fa-download"> </i></span>
-              <h3 class="timer count-value" data-to="561" data-speed="1000">561</h3>
-              <hr class="width25-divider">
-              <small class="count-title">Downloads</small>
-            </div>
-
-            <div class="col-md-3 col-sm-6 count-one">
-              <span class="icon"><i class="fa fa-user"> </i></span>
-              <h3 class="timer count-value" data-to="950" data-speed="1000">950</h3>
-              <hr class="width25-divider">
-              <small class="count-title">Developers</small>
-            </div>
-
-            <div class="col-md-3 col-sm-6 count-one">
-              <span class="icon"><i class="fa fa-desktop"> </i></span>
-              <h3 class="timer count-value" data-to="978" data-speed="1000">978</h3>
-              <hr class="width25-divider">
-              <small class="count-title">Lines of code written</small>
-            </div>
-
-            <div class="col-md-3 col-sm-6 count-one">
-              <span class="icon"><i class="fa fa-coffee"> </i></span>
-              <h3 class="timer count-value" data-to="1700" data-speed="1000">1700</h3>
-              <hr class="width25-divider">
-              <small class="count-title">Cups of coffee consumed</small>
-            </div>
+          <div class="service-content">
+            <h4><a href="#">Easy to Customize</a></h4>
+            <p>
+              The Matter Wallet can be branded to your specification. Want specific 
+              features disabled or labeled in your white-label version? No problem. 
+              Your customers get the benefits of our updates.
+            </p>
           </div>
         </div>
       </div>
+      <!-- Start Service Icon 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fa fa-cubes"></i>
+          </div>
+          <div class="service-content">
+            <h4><a href="#">100+ Blockchains</a></h4>
+            <p>
+              We can integrate you today. We hope every coin can integrate with the 
+              Matter Wallet wallet. When everyone has a chance to have their voices
+              heard, the market is free to decide the winners and losers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Start Service Icon 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div class="service-content">
+            <h4><a href="#">Super Fast</a></h4>
+            <p>
+              We’ve built the Matter Accelerator as a part of our backend to 
+              make your transactions feel instant even when available computation is not.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Start Service Icon 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <div class="service-content">
+            <h4><a href="#">Clean Design</a></h4>
+            <p>
+              Users can customize their wallets. Matter Tools are designed to be clean 
+              and pleasant to navigate. We keep it simple, like all thing should be.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Start Service Icon 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="service-content">
+            <h4><a href="#">On and off-chain.</a></h4>
+            <p>
+              Transact everywhere thanks to our decentralized notary services. When 
+              one computer goes down, the other nodes pick up the load. We’ll make every 
+              interaction feel seamless.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Start Service Icon 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="far fa-hand-point-up"></i>
+          </div>
+          <div class="service-content">
+            <h4><a href="#">Advanced Features</a></h4>
+            <p>
+              Blended chain smart contracts enable customizable agreements between multiple 
+              parties, containing user-defined scripted clauses, hooks, and variables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <div class="mb-60"></div>
-	
-      <!-- Team Members 04 -->	
-      <div class="container">	                  
-            <div class="team-members-tow mtb-50">
-              <div class="sub-title">
-                <span>Team Members</span>
+  <!-- Center Body, Pitch Header -->
+  <!--
+  <div class="mb-60"></div>
+  <div class="header-style-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <figure>
+            <img src="{{ BASE_PATH }}/assets/images/bg/hero-2.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="hero-content-v2">
+            <h3><span class="textTitle">On and off-chain, unifying payments.</span></h3>
+            <span class="accentTxt"><strong>Ready for any Merchant, Customer, or Issuer.</strong></span>
+            <a href="#contact-us" class="btn btn-lg btn-default-filled animated fadeInUp">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  
+  <!-- Press Release Posts -->
+  <!--
+  <div class="mb-60"></div>
+  <div class="container">
+    <h4 class="sub-title space-left">Press Releases</h4>
+  </div>
+  <section id="press">
+    <div class="container">                              
+      <div id="posts-carousel" class="owl-carousel">
+        {% for post in site.posts %}     
+        <div class="press-block press block carousel-post">
+          {% if post.img %}           
+          <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="">
+          {% endif %}           
+          <h5>{{ post.title }}</h5>
+          <p>{{ post.excerpt }}</p>
+          <a href="{{ BASE_PATH }}{{ post.url }}">Full Article <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        {% endfor %}
+      </div>              
+    </div>
+  </section>
+  -->
+
+  <!-- Development Progress -->
+  <div class="mb-60"></div>
+  <style>
+    .dev-title {
+      color: white;
+      align-content: center;
+      text-align: center;
+      font-size: xx-large;
+    }
+  </style>
+  <!-- Site Counters -->
+  <!--
+  <script>
+    let xhr = new XMLHttpRequest();
+    xhr.open('get', 'https://github.com/Open-Transactions/opentxs/graphs/contributors?_pjax=#js-repo-pjax-container');
+    xhr.send();
+
+    xhr.onload = function() {
+        console.log(xhr.response);
+    };
+  </script>
+  -->
+  <div id="counter">
+    <div class="container home-counters">
+      <div class="dev-title">
+        <h4 class="dev-title">Development Progress</h4>
+      </div>
+      <div class="row count-to-sec">
+        <div class="col-md-3 col-sm-6 count-one home-counter-element">
+          <span class="icon"><i class="fa fa-download"> </i></span>
+          <h3 class="timer count-value" data-to="{{ site.counts.downloads }}" data-speed="2000">{{ site.counts.downloads }}</h3>
+          <hr class="width25-divider">
+          <small class="count-title">Downloads</small>
+        </div>
+
+        <div class="col-md-3 col-sm-6 count-one">
+          <span class="icon"><i class="fa fa-user"> </i></span>
+          <h3 class="timer count-value" data-to="{{ site.counts.contributors }}" data-speed="2100">{{ site.counts.contributors }}</h3>
+          <hr class="width25-divider">
+          <small class="count-title">Contributors</small>
+        </div>
+
+        <div class="col-md-3 col-sm-6 count-one">
+          <span class="icon"><i class="fa fa-desktop"> </i></span>
+          <h3 class="timer count-value" data-to="{{ site.counts.commits }}" data-speed="1900">{{ site.counts.commits }}</h3>
+          <hr class="width25-divider">
+          <small class="count-title">Commits Made</small>
+        </div>
+
+        <div class="col-md-3 col-sm-6 count-one">
+          <span class="icon"><i class="fa fa-coffee"> </i></span>
+          <h3 class="timer count-value" data-to="{{ site.counts.code_lines }}" data-speed="1800">{{ site.counts.code_lines }}</h3>
+          <hr class="width25-divider">
+          <small class="count-title">Lines Of Code</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--
+  <-- Team Members Display --
+  <div class="mb-60"></div>
+  <div class="container">	                  
+    <div class="team-members-tow mtb-50">
+      <div class="sub-title">
+        <h3><a class="title-head text-center" href="/team.html">Team Members:</a></h3>
+      </div>
+      <div class="row">
+        <-- Team Item Starts --
+        <div class="col-sm-6 col-md-4">
+          <figure>
+            <img class="team-portrait" src="{{ BASE_PATH }}/assets/images/team/team-01.jpg" alt="">
+            <div class="image-overlay">
+              <div class="overlay-text text-center">
+                <div class="info-text">
+                  <strong><a class="team-link" href="/team.html">{{ site.team.member_01.name }}</a></strong>
+                  <span>{{ site.team.member_01.title }}</span>
+                </div>
+                <hr class="small-divider border-white">
+                <ul class="social-icons">
+                  <a href="{{ site.team.member_01.linkedin }}">Linkedin</a>
+                </ul>
               </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-05.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Melody Clark</strong>
-                          <span>UX Specialist</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
+            </div>
+          </figure>
+        </div>
+        <-- Team Item Starts --
+        <div class="col-sm-6 col-md-4">
+          <figure>
+            <img class="team-portrait" src="{{ BASE_PATH }}/assets/images/team/team-02.jpg" alt="">
+            <div class="image-overlay">
+              <div class="overlay-text text-center">
+                <div class="info-text">
+                  <strong><a class="team-link" href="/team.html">{{ site.team.member_02.name }}</a></strong>
+                  <span>{{ site.team.member_02.title }}</span>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-06.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Danny Burton</strong>
-                          <span>Senior Designer</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-07.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Elizabeth Jones</strong>
-                          <span>Art Director</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                  <!-- Team Item Starts -->
-                  <figure>
-                    <img src="{{ BASE_PATH }}/assets/images/team/team-08.jpg" alt="">
-                    <div class="image-overlay">
-                      <div class="overlay-text text-center">
-                        <div class="info-text">
-                          <strong>Danny Burton</strong>
-                          <span>Senior Designer</span>
-                        </div>
-                        <hr class="small-divider border-white">
-                        <ul class="social-icons">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </figure>
-                  <!-- Team Item Ends -->
-                </div>
-
+                <hr class="small-divider border-white">
+                <ul class="social-icons">
+                  <a href="{{ site.team.member_02.linkedin }}">Linkedin</a>
+                </ul>
               </div>
-            </div>            	      	      	      
-      </div>      
-      <!-- End Team Members 04 -->      	
-	
-	
-      <div class="mb-60"></div>
-     
-            
-            
-      <!-- CONTACT FORM -->     
+            </div>
+          </figure>
+        </div>
+        <-- Team Item Starts --
+        <div class="col-sm-6 col-md-4">
+          <figure>
+            <img class="team-portrait" src="{{ BASE_PATH }}/assets/images/team/team-03.jpg" alt="">
+            <div class="image-overlay">
+              <div class="overlay-text text-center">
+                <div class="info-text">
+                  <strong><a class="team-link" href="/team.html">{{ site.team.member_03.name }}</a></strong>
+                  <span>{{ site.team.member_03.title }}</span>
+                </div>
+                <hr class="small-divider border-white">
+                <ul class="social-icons">
+                  <a href="{{ site.team.member_03.linkedin }}">Linkedin</a>
+                </ul>
+              </div>
+            </div>
+          </figure>
+        </div>
+      <-- Team Item Ends --
+      </div>
+    </div>
+  </div>
+  -->
+  
+  <!-- Contact Form -->
+  <div id="contact-us" class="mb-60"></div>
 	<div class="container">
-	<div class="row">	      
-          <div class="col-md-8">
-            <h3 class="title-head text-center">Get in touch</h3>
-            <form class="contact-form" data-toggle="validator">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <i class="contact-icon fa fa-user"></i>
-                    <input type="text" class="form-control" id="name" placeholder="Full Name" required data-error="Please enter your name">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <i class="contact-icon fa fa-envelope-o"></i>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required data-error="Please enter your email">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <i class="contact-icon fa fa-pencil-square-o"></i>
-                    <input type="text" class="form-control" id="subject" placeholder="Subject" required data-error="Please enter your Subject">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <textarea id="message" rows="8" placeholder="Message" required data-error="Please enter your message"></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <button type="submit" id="form-submit" class="btn btn-common btn-form-submit">Send Message</button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </form>
-          </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="title-head text-center">Get in Touch</h3>
+        <form name="contact" id="contact" class="contact-form" data-toggle="validator" action="https://formspree.io/f/mleolekp" method="POST">
+          <!-- <div name="formfields"> -->
+            <div class="row">
+              <!-- Name -->
+              <div class="col-sm-4"><div class="form-group">
+                <i class="contact-icon fa fa-user"></i>
+                <input autocomplete="off" name="name" type="text" class="form-control" id="name" placeholder="Full Name" data-error="Please enter your name" required="required">
+                <div class="help-block with-errors"></div>
+              </div></div>
+              <!-- Email -->
+              <div class="col-sm-4"><div class="form-group">
+                <i class="contact-icon fa fa-envelope-o"></i>
+                <input autocomplete="off" name="_replyto" type="email" class="form-control" id="email" placeholder="Email" data-error="Please enter your email" required="required">
+                <div class="help-block with-errors"></div>
+              </div></div>
+              <!-- Subject -->
+              <div class="col-sm-4"><div class="form-group">
+                <i class="contact-icon fa fa-pencil-square-o"></i>
+                <input autocomplete="off" name="subject" type="text" class="form-control" id="subject" placeholder="Subject" data-error="Please enter your Subject" required="required">
+                <div class="help-block with-errors"></div>
+              </div></div>
+              <!-- Message -->
+              <div class="col-sm-12"><div class="form-group">
+                <textarea autocomplete="off" name="message" id="message" rows="8" placeholder="Message" data-error="Please enter your message" required="required"></textarea>
+                <div class="help-block with-errors"></div>
+              </div></div>
+              <!-- Error handler -->
+              <span class="showerror" aria-live="polite"></span>
 
-          <div class="col-md-4">
-            <h4 class="contact-info-title">Contact Information</h4>
-            <div class="contact-info">
-              <address>
-							<i class="fa fa-map-marker icons cyan-color contact-info-icon"></i>
-							Level 13, 2 Elizabeth St, Melbourne,
-							<br>
-							Victoria 3000, Australia
-						</address>
-              <div class="tel-info">
-                <a href="tel:1800452308"><i class="fa fa-mobile icons cyan-color contact-info-icon"></i>1800 452 308</a>
-                <a href="tel:+61(8)82343555"><i class="fa fa-phone icons cyan-color contact-info-icon"></i>+61 (8) 8234 3555</a>
+            <!-- </div> -->
+            <!-- Submit Button -->
+              <div class="contact-form-sub-button">
+                <input name="submit_but" type="submit" id="form-submit" class="btn btn-common btn-form-submit" onclick="submit_form();" value="Send Message" />
               </div>
-              <a href="mailto:lantoniotrento@gmail.com"><i class="fa fa-envelope-o icons cyan-color contact-info-icon"></i>lantoniotrento@gmail.com</a>
-              <a href="https://antoniotrento.github.io"><i class="fa fa-tablet icons cyan-color contact-info-icon"></i>https://antoniotrento.github.io</a>
-              {% include social-block.html %}
-            </div>
           </div>
+        </form>
+      </div>
+      <!-- Form Action -->
+      <script>
+        function submit_form() {
+          const email = document.getElementById('_replyto');
+          const emailError = document.querySelector('#mail + span.error');
+          var is_valid_input = false;
+          /* Start checking form fields for validity */
+          if (email.checkValidity()) {
+            is_valid_input = true;
+          } else {
+            alert("Please enter a valid Email address.");
+          }
+          /* Ensure that all required fields are filled in. */
+          if (is_valid_input) {
+            alert("Thank you for getting in touch. Be sure to check for a contact notification email.");
+            document.getElementById('contact').submit();
+            document.getElementById('contact').hidden = true;
+          }
+          //document.getElementById('contact').reset();
+          return false;
+        }
+      </script> 
+      <!-- Contact Information -->
+      <style>
+        .center-contact {
+          align-content: center;
+          text-align: center;
+          font-size: xx-large;
+          padding: 75px 0;
+        }
+      </style>
+      <div class="col-md-4 center-contact">
+        <h4 class="contact-info-title">Contact Information</h4>
+        <div class="contact-info">
+          <address>
+            <a href="maps.html">
+              <i class="fa fa-map-marker icons cyan-color contact-info-icon"></i>
+                {{ site.contact_info.address_ln1 }}
+              <br>
+              &emsp;&nbsp;
+              {{ site.contact_info.address_ln2 }}
+            </a>
+          </address>
+          <!--
+          <div class="tel-info">
+            <i class="fa fa-mobile icons cyan-color contact-info-icon"></i>{{ site.contact_info.phone }}
+          </div>
+          -->
+          <a href='mailto:contact@matterfi.com'><i class="fa fa-envelope-o icons cyan-color contact-info-icon"></i>{{ site.contact_info.email }}</a>
+
+          <!--Social Media-->
+          <span class="social">
+            {% if site.company.linkedin %}<a href="https://www.linkedin.com/{{ site.company.linkedin }}/"><i class="fab fa-2x fa-linkedin"></i></a>{% endif %}
+            {% if site.company.twitter %}<a href="https://twitter.com/{{ site.company.twitter }}"><i class="fab fa-2x fa-twitter"></i></a>{% endif %}
+            {% if site.company.facebook %}<a href="https://www.facebook.com/{{ site.company.facebook }}/"><i class="fab fa-2x fa-facebook-f"></i></a>{% endif %}
+            {% if site.company.instagram %}<a href="https://www.instagram.com/{{ site.company.instagram }}/"><i class="fab fa-2x fa-instagram"></i></a>{% endif %}
+            {% if site.company.github %}<a href="https://www.github.com/{{ site.company.github }}/"><i class="fab fa-2x fa-github"></i></a>{% endif %}
+            {% if site.company.telegram %}<a href="https://www.t.me/{{ site.company.telegram }}/"><i class="fab fa-2x fa-telegram"></i></a>{% endif %}
+            {% if site.company.discord %}<a href="https://www.discord.gg/{{ site.company.discord }}"><i class="fab fa-2x fa-discord"></i></a>{% endif %}
+          </span>
 
         </div>
-	</div>
+      </div>
+    <!-- End Contact Form -->
+    </div>
+  </div>
 
-            
-            
 <!-- Content area end -->
 </div>

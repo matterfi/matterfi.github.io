@@ -1,0 +1,96 @@
+---
+layout: index
+title: "Download Now"
+group: navigation
+img:
+img-mobile:
+tagline:
+tags: [download, downloads, components, app, install, installer, application]
+keywords: crypto, wallet, investing, app, matterfi, download
+---
+{% include JB/setup %}
+
+<!-- Content Area Start -->
+<div id="content" class="d-flex flex-column align-self-center">
+
+    <!-- Page Header -->
+    <div class="page-header-title">
+      <h2 class="heading-title text-center">Wallet Downloads</h2>
+    </div>
+
+    <!-- PKT download section -->
+    <div class="download-product d-flex flex-column align-self-center animated fadeIn">
+      
+      <img class="download-product-logo" src="{{ BASE_PATH }}/downloads/pkt_wallet/pkt-logo.svg" alt="">
+
+      <div class="download-box-list d-flex flex-column align-self-center">
+        {% if site.download_links.pkt_wallet.enabled %}
+          <!-- Download MacOS -->
+          {% if site.download_links.pkt_wallet.macos %}
+            <div class="download-box d-flex align-items-center">
+              <div class="p-2"><div class="platform-icon"><i class="fab fa-apple"></i></div></div>
+              <div class="p-2"><a href="{{ site.download_links.pkt_wallet.macos }}" class="btn btn-lg btn-default-filled">MacOS</a></div>
+              <div class="download-version p-2">{{ site.download_links.pkt_wallet.versions.macos }}</div>
+            </div>
+            <div class="download-disclaimer d-flex align-items-center">
+              <div class="p-2">*Intel only</div>
+              <div class="download-disclaimer-sm p-2">M1 support coming in future release.</div>
+            </div>
+          {% endif %}
+
+          <!-- Download MacOS terminal -->
+          {% if site.download_links.pkt_wallet.macos_ctl %}
+            <div class="download-box d-flex align-items-center">
+              <div class="p-2"><div class="platform-icon"><i class="fab fa-apple"></i></div></div>
+              <div class="p-2"><a href="{{ site.download_links.pkt_wallet.macos_ctl }}" class="btn btn-lg btn-default-filled">MacOS CTL</a></div>
+              <div class="download-version p-2">{{ site.download_links.pkt_wallet.versions.macos_ctl }}</div>
+            </div>
+          {% endif %}
+
+          <!-- Download Linux FlatPack -->
+          {% if site.download_links.pkt_wallet.linux %}
+            <div class="download-box d-flex align-items-center">
+              <div class="p-2"><div class="platform-icon"><i class="fab fa-linux"></i></div></div>
+              <div class="p-2"><a href="{{ site.download_links.pkt_wallet.linux }}" class="btn btn-lg btn-default-filled">Linux FlatPack</a></div>
+              <div class="download-version p-2">{{ site.download_links.pkt_wallet.versions.linux }}</div>
+            </div>
+          {% endif %}
+
+          <!-- Download Windows -->
+          {% if site.download_links.pkt_wallet.windows %}
+            <div class="download-box d-flex align-items-center">
+              <div class="p-2"><div class="platform-icon"><i class="fab fa-windows"></i></div></div>
+              <div class="p-2"><a href="{{ site.download_links.pkt_wallet.windows }}" class="btn btn-lg btn-default-filled">Windows 10</a></div>
+              <div class="download-version p-2">{{ site.download_links.pkt_wallet.versions.windows }}</div>
+            </div>
+          {% endif %}
+        {% else %}
+          <div class="download-box d-flex align-items-center">
+            <div class="download-version">Temporarily disabled for maintenance.</div>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if site.download_links.pkt_wallet.enabled %}
+        <div class="d-flex flex-column justify-content-center" style="margin-top: 48px;">
+          <div class="download-disclaimer download-disclaimer-sm align-self-center">
+            Beta Note: Messaging and MatterCode™ name lookup are disabled until next release pending a performance upgrade.
+          </div>
+          <div class="download-disclaimer download-disclaimer-sm d-flex flex-column align-self-center" style="margin-top: 24px;">
+            <div class="p-2">Please delete any old data directories if you have tested any previous version of the wallet.</div>
+            <div class="d-flex flex-column align-items-left" style="width: 120%;">
+              <div class="text-left">On <u><b>MacOS</b></u>: "/Users/&lt;username&gt;/Library/Application Support/pktdesktop"</div>
+              <div class="text-left">On <u><b>Linux</b></u>: ~/.cache/pktdesktop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="downloads-footer d-flex justify-content-center">
+        <div><a href="{{ site.contact_info.report_bug }}" class="btn btn-default-filled">Report an application issue.</a></div>
+      </div>
+    {% endif %}
+<!-- Content Area End -->
+</div>
+
+<span style="margin-bottom: 128px;"></span>
