@@ -106,7 +106,7 @@ task :switch_theme => "theme:switch"
 
 namespace :theme do
   
-  # Public: Switch from one theme to another for your blog.
+  # Public: Switch from one theme to another for your press.
   #
   # name - String, Required. name of the theme you want to switch to.
   #        The theme must be installed into your JB framework.

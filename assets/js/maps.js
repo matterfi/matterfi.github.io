@@ -6,7 +6,7 @@
 
     var markers = [];
     var image = new google.maps.MarkerImage(
-      'assets/img/map-marker.png',
+      'assets/images/map-marker.png',
       new google.maps.Size(84, 70),
       new google.maps.Point(0, 0),
       new google.maps.Point(60, 60)

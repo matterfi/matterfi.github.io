@@ -1,40 +1,57 @@
-            <div class="top-menu">
-              <p>
-                <span class="left">
-                  <a href="#"><i class="fa fa-map-marker"></i>New South Wales, Sydney</a>
-                  <a href="#"><i class="fa fa-mobile-phone"></i>+9 34476 3244</a>
-                  <a href="#"><i class="fa fa-envelope"></i>email@example.com</a>
-              	</span>
-                <span class="right hidden-sm-down">                          
-                  {% if site.author.facebook %}<a href="https://www.facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook"></i></a>{% endif %}
-                  {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}
-                  {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"><i class="fa fa-linkedin"></i></a>{% endif %}
-                  {% if site.author.instagram %}<a href="https://www.instagram.com/{{ site.author.instagram }}/"><i class="fa fa-instagram"></i></a>{% endif %}                            
-              	</span>
-              </p>
-            </div>
+<div class="top-menu">
+  <p>
+    <span class="left">
+      <a href="maps.html"><i class="fa fa-map-marker"></i>{{ site.contact_info.address_ln1 }} {{ site.contact_info.address_ln2 }}</a>
+      <!-- 
+      <a href="#"><i class="fa fa-mobile-phone"></i>{{ site.contact_info.phone }}</a>
+      -->
+      <a href="mailto:contact@matterfi.com"><i class="fa fa-envelope"> {{ site.contact_info.email }}</i></a>
+    </span>
+    <!--
+    <span class="right hidden-sm-down">                          
+      {% if site.company.facebook %}<a href="https://www.facebook.com/{{ site.company.facebook }}/"><i class="fa fa-facebook"></i></a>{% endif %}
+      {% if site.company.twitter %}<a href="https://twitter.com/{{ site.company.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}
+      {% if site.company.linkedin %}<a href="https://www.linkedin.com/in/{{ site.company.linkedin }}/"><i class="fa fa-linkedin"></i></a>{% endif %}
+      {% if site.company.instagram %}<a href="https://www.instagram.com/{{ site.company.instagram }}/"><i class="fa fa-instagram"></i></a>{% endif %}                            
+    </span>
+    -->
+  </p>
+</div>
 
-            <!-- navbar-default -->
-            <nav class="navbar navbar-toggleable-sm navbar-light bg-default">
-              <div class="container">
-                <a class="navbar-brand" href="{{ BASE_PATH }}"><img src="{{ BASE_PATH }}/assets/images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar1">
-                  <ul class="navbar-nav">
-                    {% assign pages_list = site.pages %}
-                    {% assign group = 'navigation' %}
-                    {% include JB/pages_list %}
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+<!--
+<!- navbar ->
+<nav class="navbar navbar-toggleable-sm">
+  <div class="container navbar-media">
+    <a class="navbar-brand" href="/"><img class="navbar-logo" src="{{ BASE_PATH }}/assets/images/svg/Matterfi-normal.svg" alt=""></a>
+    <!-
+      {% if page.url == '/press' %}  {% endif %}
+      <a class="navbar-home-link" href="/">MatterFi</a>
+    ->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="navbar-nav">
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include JB/pages_list %}
+    </ul>
+  </div>
+  -->
+
+    <!--
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    -->
+
+  </div>
+</nav>
