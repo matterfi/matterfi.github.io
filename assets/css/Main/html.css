@@ -14,6 +14,14 @@
     font-family: roboto-bold;
     src: url("/assets/fonts/Roboto/Roboto-Bold.ttf");
 }
+@font-face {
+    font-family: spaceGrotesk-bold;
+    src: url("/assets/fonts/SpaceGrotesk-2.0.0/SpaceGrotesk-Bold.ttf");
+}
+@font-face {
+    font-family: inter;
+    src: url("/assets/fonts/Inter/Inter-Regular.ttf");
+}
 
 .text-primary {
     font-family: roboto !important;
@@ -341,47 +349,6 @@ strong{
 
 .bg-black {
     background-color:#333
-}
-
-.timer {
-    color:#444;
-    font-size:48px;
-    line-height:1.2;
-    margin-top:0;
-    margin-bottom:20px
-}
-
-#counter {
-    background-image:url(/assets/images/bg/testimonial-bg.jpg);
-    background-size:cover;
-    padding:60px 0
-}
-
-.count-one {
-    text-align:center;
-    margin-top:80px;
-    margin-bottom:80px
-}
-
-.count-one .icon {
-    margin-bottom:20px;
-    display:block
-}
-
-.count-one .icon i {
-    color:#1E9CD7;
-    font-size:48px
-}
-
-.count-one .count-value {
-    color:#fff;
-    font-size:48px;
-    margin-bottom:20px
-}
-
-.count-one .count-title {
-    color:#fff;
-    font-size:14px
 }
 
 .width25-divider {

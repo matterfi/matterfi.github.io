@@ -89,13 +89,6 @@
     /* box-shadow: 0 0 3pt 3pt black; */
 }
 
-.contact-form-sub-button {
-    margin: auto;
-    display: block;
-    text-align: center;
-    width: 30%;
-}
-
 .hero-content-v2 {
     margin-top:144px;
     text-align: center;
@@ -200,45 +193,6 @@
     height: 160px;
     padding-top: 48px;
     margin: auto 0; 
-}
-
-.service-box {
-    margin-top:15px;
-    margin-bottom:15px
-}
-
-.service-box .service-icon {
-    float:left;
-    margin-top:5px
-}
-
-.service-box .service-icon i {
-    font-size:32px;
-    color:#5d8eb8
-}
-
-.service-box .service-content {
-    padding-left:48px;
-    word-break: break-word;
-    white-space: normal;
-}
-
-.service-box .service-content h4 {
-    font-size:18px;
-    margin-bottom:10px;
-    font-weight:700;
-    transition:all 0.4s ease-in-out;
-    -moz-transition:all 0.4s ease-in-out;
-    -webkit-transition:all 0.4s ease-in-out;
-    -o-transition:all 0.4s ease-in-out
-}
-
-.service-box .service-content h4 a {
-    color:#444
-}
-
-.service-box .service-content h4 a:hover {
-    color:#1E9CD7
 }
 
 .social .fa-facebook-f:hover {
@@ -359,13 +313,6 @@
         font-size:14px
     }
 
-    .contact-form-sub-button {
-        margin: auto;
-        display: block;
-        text-align: center;
-        width: 50%;
-    }
-
     .carousel-text-title {
         width: 70%
     }
@@ -399,21 +346,5 @@
 
     .home-main-feature-btn {
         padding-bottom: 6px;
-    }
-
-    .home-counters {
-        max-height: 30%;
-    }
-
-    .home-counter-element h3 {
-        font-size:24px;
-    }
-
-    .contact-form-sub-button {
-        margin: auto;
-        display: block;
-        text-align: center;
-        width: 50%;
-    }
-    
+    }    
 }

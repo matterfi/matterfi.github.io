@@ -25,8 +25,10 @@
 .contact-form textarea:focus{
     border-color:#1E9CD7
 }
-.contact-form .form-group{
-    margin-bottom:0
+.contact-form .form-group {
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .contact-info-title{
     color:#444;
@@ -80,6 +82,9 @@ address i{
 }
 .form-group input{
     font:normal normal normal 14px/1 FontAwesome,"Rubik",sans-serif
+}
+.form-group textarea {
+    resize: none;
 }
 .input-group input{
     font:normal normal normal 14px/1 FontAwesome,"Rubik",sans-serif

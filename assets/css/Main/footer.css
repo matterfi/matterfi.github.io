@@ -1,14 +1,14 @@
 .default-footer {
     background:#000;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 96px;
+    padding-top: 132px;
     text-align: center;
 }
 
 .footer-logo {
-    height:100;
-    width:auto;
-    max-width: 60%;
+    height: 20%;
+    width: auto;
+    max-width: 50%;
 }
 
 footer .widget-title {

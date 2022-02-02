@@ -3,7 +3,7 @@ layout: index
 title: MatterFi
 tagline: A Crypto Wallet Manager. Great Ideas are plentiful, its execution that really Matters.
 tags: [wallet, crypto, money, investing, app, matterfi]
-css: 
+css:
 img: 
 img-mobile: social-image.png
 js: index.js
@@ -12,24 +12,30 @@ keywords: crypto, wallet, investing, app, matterfi
 {% include JB/setup %}
 
 <!-- Content Area Start -->
-<div id="content">
-  <div class="container lander-head">
-    <div class="head-context">
-      <h3>Simple and Secure User Accounts</h3>
-      <p>Reusable encrypted payment codes extended with a RFC simplify account handling.</p>
+<div >
+
+  <!-- Header -->
+  <div class="lander-head">
+    <div class="head-flex-container">
+      <div class="head-context">
+        <h3>Simple and Secure</h3>
+        <h3 style="text-decoration: none;">User Accounts</h3>
+        <p>Reusable encrypted payment codes extended with a RFC simplify account handling.</p>
+        <div class="learn-btn"><a class="btn-lnk" href="https://github.com/OpenBitcoinPrivacyProject/rfc/blob/master/obpp-05.mediawiki"><p>Learn More</p></a></div>
+      </div>
+
+      <img class="lander-project-art" src="{{ BASE_PATH }}/assets/images/lander/project manegement colored 1.svg" alt="">
     </div>
-    <img class="lander-project-art" src="{{ BASE_PATH }}/assets/images/svg/project-manegement.svg" alt="">
-    <div class="floor-gound"></div>
   </div>
 
+  <!-- Service Features -->
   <div class="features">
-    <div class="container features-container">
-      <!-- Service Features -->
+    <div class="features-container">
       <div class="row">
         <!-- Start Service Icon 1 -->
         <div class="col-md-4 col-sm-6">
           <div class="service-box">
-            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/svg/customize.svg" alt="">
+            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/lander/image (13).png" alt="">
             <div class="service-content">
               <h4>Easy to Customize</h4>
               <p>
@@ -43,7 +49,7 @@ keywords: crypto, wallet, investing, app, matterfi
         <!-- Start Service Icon 2 -->
         <div class="col-md-4 col-sm-6">
           <div class="service-box">
-            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/svg/customize.svg" alt="">
+            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/lander/image (13)-1.png" alt="">
             <div class="service-content">
               <h4>100+ Blockchains</h4>
               <p>
@@ -57,7 +63,7 @@ keywords: crypto, wallet, investing, app, matterfi
         <!-- Start Service Icon 3 -->
         <div class="col-md-4 col-sm-6">
           <div class="service-box">
-            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/svg/customize.svg" alt="">
+            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/lander/image (13)-2.png" alt="">
             <div class="service-content">
               <h4>Super Fast</h4>
               <p>
@@ -70,7 +76,7 @@ keywords: crypto, wallet, investing, app, matterfi
         <!-- Start Service Icon 4 -->
         <div class="col-md-4 col-sm-6">
           <div class="service-box">
-            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/svg/customize.svg" alt="">
+            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/lander/image (13)-5.png" alt="">
             <div class="service-content">
               <h4>Clean Design</h4>
               <p>
@@ -83,7 +89,7 @@ keywords: crypto, wallet, investing, app, matterfi
         <!-- Start Service Icon 5 -->
         <div class="col-md-4 col-sm-6">
           <div class="service-box">
-            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/svg/customize.svg" alt="">
+            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/lander/image (13)-4.png" alt="">
             <div class="service-content">
               <h4>On and off-chain.</h4>
               <p>
@@ -97,7 +103,7 @@ keywords: crypto, wallet, investing, app, matterfi
         <!-- Start Service Icon 6 -->
         <div class="col-md-4 col-sm-6">
           <div class="service-box">
-            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/svg/customize.svg" alt="">
+            <img class="service-icon" src="{{ BASE_PATH }}/assets/images/lander/image (13)-5.png" alt="">
             <div class="service-content">
               <h4>Advanced Features</h4>
               <p>
@@ -109,18 +115,15 @@ keywords: crypto, wallet, investing, app, matterfi
         </div>
       </div>
     </div>
-
-    <div class="lander-orbs"><img class="lander-img" src="{{ BASE_PATH }}/assets/images/bg/orbs.svg" alt=""></div>
   </div>
 
-
-
+  <!-- Develop Counters -->
   <div id="counter">
-    <div class="container">
+    <div class="container-development-progress">
       <div class="home-counters">
         <h3>Development Progress</h3>
 
-        <div class="row">
+        <div class="counter-row">
           <div class="col-md-3 count-one">
             <h3 class="timer count-value" data-to="{{ site.counts.downloads }}" data-speed="2000">{{ site.counts.downloads }}</h3>
             <div class="count-title">Downloads</div>
@@ -143,6 +146,95 @@ keywords: crypto, wallet, investing, app, matterfi
         </div>
       </div>
     </div>
+  </div>
+
+
+  <!-- Contact Information -->
+  <div id="contact-us" class="contact-us">
+
+    <div class="col-md-4 center-contact">
+      <h3 class="title-head text-center">Get in Touch</h3>
+      <div class="contact-info">
+
+        <div class="tel-info"><i class="fa fa-mobile icons cyan-color contact-info-icon"></i>{{ site.contact_info.phone }}</div>
+
+        <a href='mailto:contact@matterfi.com'><i class="fa fa-envelope-o icons cyan-color contact-info-icon"></i>{{ site.contact_info.email }}</a>
+
+        <address>
+          <a href="maps.html">
+            <i class="fa fa-map-marker icons cyan-color contact-info-icon"></i>
+              {{ site.contact_info.address_ln1 }}
+            <br>
+            &emsp;&nbsp;
+            {{ site.contact_info.address_ln2 }}
+          </a>
+        </address>
+
+        <!-- Social Media
+        <span class="social">
+          {% if site.company.linkedin %}<a href="https://www.linkedin.com/{{ site.company.linkedin }}/"><i class="fab fa-2x fa-linkedin"></i></a>{% endif %}
+          {% if site.company.twitter %}<a href="https://twitter.com/{{ site.company.twitter }}"><i class="fab fa-2x fa-twitter"></i></a>{% endif %}
+          {% if site.company.facebook %}<a href="https://www.facebook.com/{{ site.company.facebook }}/"><i class="fab fa-2x fa-facebook-f"></i></a>{% endif %}
+          {% if site.company.instagram %}<a href="https://www.instagram.com/{{ site.company.instagram }}/"><i class="fab fa-2x fa-instagram"></i></a>{% endif %}
+          {% if site.company.github %}<a href="https://www.github.com/{{ site.company.github }}/"><i class="fab fa-2x fa-github"></i></a>{% endif %}
+          {% if site.company.telegram %}<a href="https://www.t.me/{{ site.company.telegram }}/"><i class="fab fa-2x fa-telegram"></i></a>{% endif %}
+          {% if site.company.discord %}<a href="https://www.discord.gg/{{ site.company.discord }}"><i class="fab fa-2x fa-discord"></i></a>{% endif %}
+        </span>
+        -->
+      </div>
+    </div>
+
+    <!-- Message Form -->
+    <div class="col-md-8">
+      <form name="contact" id="contact" class="contact-form" data-toggle="validator" action="https://formspree.io/f/mleolekp" method="POST">
+        <h3>Contact Us</h3>
+        <!-- Name -->
+        <div class="col-sm-12 form-group">
+          <i class="contact-icon fa fa-user"></i>
+          <input autocomplete="off" name="name" type="text" class="form-control" id="name" placeholder="Full Name" data-error="Please enter your name" required="required">
+          <div class="help-block with-errors"></div>
+        </div>
+        <!-- Email -->
+        <div class="col-sm-12 form-group">
+          <i class="contact-icon fa fa-envelope-o"></i>
+          <input autocomplete="off" name="_replyto" type="email" class="form-control" id="email" placeholder="Email" data-error="Please enter your email" required="required">
+          <div class="help-block with-errors"></div>
+        </div>
+        <!-- Message -->
+        <div class="col-sm-12 form-group">
+          <textarea autocomplete="off" name="message" id="message" rows="8" placeholder="Message" data-error="Please enter your message" required="required"></textarea>
+          <div class="help-block with-errors"></div>
+        </div>
+        <!-- Error handler -->
+        <span class="showerror" aria-live="polite"></span>
+
+        <!-- Submit Button -->
+        <input name="submit_but" type="submit" id="form-submit" class="contact-form-sub-button" onclick="submit_form();" value="Send Message" />
+      </form>
+    </div>
+
+    <!-- Form Action -->
+    <script>
+      function submit_form() {
+        const email = document.getElementById('_replyto');
+        const emailError = document.querySelector('#mail + span.error');
+        var is_valid_input = false;
+        /* Start checking form fields for validity */
+        if (email.checkValidity()) {
+          is_valid_input = true;
+        } else {
+          alert("Please enter a valid Email address.");
+        }
+        /* Ensure that all required fields are filled in. */
+        if (is_valid_input) {
+          alert("Thank you for getting in touch. Be sure to check for a contact notification email.");
+          document.getElementById('contact').submit();
+          document.getElementById('contact').hidden = true;
+        }
+        //document.getElementById('contact').reset();
+        return false;
+      }
+    </script> 
   </div>
 
 </div>
