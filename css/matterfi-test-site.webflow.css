@@ -4,14 +4,12 @@
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .w-embed-youtubevideo:empty {
   min-height: 75px;
-  padding-bottom: 56.25%;
 }
 
 body {
@@ -212,7 +210,10 @@ p {
 .section.press {
   padding-top: 11px;
   padding-bottom: 11px;
+	width: 60%;
+	margin: auto auto;
   background-color: rgba(182, 208, 229, 0);
+	padding-left: 10%;
 }
 
 .slider {
@@ -470,7 +471,10 @@ p {
 }
 
 .feature-icon {
+	display: block;
+	margin: auto auto;
   margin-bottom: 12px;
+
 }
 
 .main-feature-group {
@@ -819,6 +823,7 @@ p {
 
 .youtube {
   font-family: 'Days One', sans-serif;
+	margin-top: 16px;
 }
 
 .image-6 {
@@ -837,7 +842,17 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 767px) {
+	.pricing-container {
+		margin-top: 20px;
+	}
+}
+
 @media screen and (max-width: 991px) {
+	.section.press {
+		padding-left: 0%;
+	}
+	
   .button.in-pricing {
     font-size: 14px;
     line-height: 18px;
