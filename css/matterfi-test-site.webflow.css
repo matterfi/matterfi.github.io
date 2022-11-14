@@ -239,13 +239,73 @@ p {
   background-color: #ccbe00;
 }
 
+.nav-container {
+	max-width: 100%;
+	padding-inline: 32px;
+}
+
+.header-container {
+	max-width: fit-content;
+	padding-inline: 32px;
+}
+
+.partners-container {
+	width: 100%;
+	padding-inline: 32px;
+	margin-inline: auto;
+	margin-bottom: 42px;
+}
+
+.partner-container {
+	width: 100%;
+	max-width: 1600px;
+	margin-inline: auto;
+	display: flex;
+  flex-wrap: wrap;
+	align-items: center;
+  justify-content: center;
+}
+
+.partner-flex {
+	width: 320px;
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.partner-name {
+	width: 320px;
+}
+
+.partner-icon {
+	height: 92px;
+	width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-container {
+	width: 100%;
+	max-width: 2000px;
+	margin-inline: auto;
+	display: flex;
+  flex-wrap: wrap;
+	align-items: center;
+  justify-content: center;
+}
+
+.sellerpoint-container {
+	width: 100%;
+	max-width: max-content;
+}
+
 .main-subtitle {
   margin-bottom: 26px;
   font-family: 'Days One', sans-serif;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 300;
+  font-weight: 50;
   text-align: left;
+	max-width: 1400px;
 }
 
 .footer-slogan {
@@ -358,7 +418,7 @@ p {
   font-family: 'Days One', sans-serif;
   font-size: 19px;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 50;
   text-align: center;
 }
 
@@ -420,6 +480,7 @@ p {
 
 .feature-row {
   margin-bottom: 25px;
+	padding: 42px;
 }
 
 .testimonial-slider {
@@ -440,7 +501,7 @@ p {
   font-family: 'Days One', sans-serif;
   font-size: 25px;
   line-height: 31px;
-  font-weight: 300;
+  font-weight: 50;
 }
 
 .slide-nav {
@@ -474,15 +535,31 @@ p {
 	display: block;
 	margin: auto auto;
   margin-bottom: 12px;
+}
 
+.can-helpif {
+	color: #12619c;
+}
+
+.center-block {
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.customers-row {
+	margin-top: 42px;
 }
 
 .main-feature-group {
-  margin-top: 30px;
+  margin-top: 0px;
+}
+
+.first-small-features-row {
+	margin-top: 0px;
 }
 
 .small-features-row {
-  margin-top: 71px;
+  margin-top: 0px;
 }
 
 .main-image {
@@ -496,7 +573,7 @@ p {
 .small-text {
   color: hsla(0, 0%, 100%, 0.31);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 50;
   text-align: center;
 }
 
@@ -540,29 +617,25 @@ p {
 	opacity: 0.41;
 }
 
-.logo-a.fly-air {
-  width: 50%;
+
+.logo.fly-air {
+  width: 100%;
   height: 100%;
 }
 
-.logo.fly-air {
-  width: 40%;
-  height: 45%;
-}
-
 .logo.spacedawgs {
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  height: 100%;
 }
 
 .logo.anatha {
-	width: 25%;
-  height: 25%;
+	width: 100%;
+  height: 100%;
 }
 
 .logo.pkt {
-  width: 25%;
-  height: 25%;
+  width: 100%;
+  height: 100%;
 }
 
 .logo.consensus-capital {
@@ -615,6 +688,8 @@ p {
 .container-5 {
   margin-top: -35px;
   margin-bottom: -46px;
+	width: 100%;
+	max-width: fit-content;
 }
 
 .utility-page-wrap {
@@ -668,6 +743,14 @@ p {
 
 .heading-3 {
   font-family: 'Days One', sans-serif;
+	text-align: center;
+}
+
+.heading-partners {
+	font-family: 'Days One', sans-serif;
+	text-align: center;
+	margin-top: 24px;
+	color: #12619c;
 }
 
 .heading-4 {
@@ -682,21 +765,20 @@ p {
   text-align: center;
 }
 
-.paragraph-0 {
-  font-family: 'Days One', sans-serif;
+.paragraph-service-custom {
+	font-family: sans-serif;
+	font-weight: 600;
   font-size: 14px;
   text-align: left;
+}
+
+.service-customer {
+	width: 80%;
 }
 
 .heading-5 {
   font-family: 'Days One', sans-serif;
   font-size: 28px;
-  text-align: center;
-}
-
-.paragraph-2 {
-  font-family: 'Days One', sans-serif;
-  font-size: 14px;
   text-align: center;
 }
 
@@ -710,29 +792,13 @@ p {
   text-align: center;
 }
 
-.heading-6 {
-  font-family: 'Days One', sans-serif;
+.paragraph-featdesc {
+  font-family: sans-serif;
   text-align: center;
+	font-weight: 500;
 }
 
-.heading-7 {
-  font-family: 'Days One', sans-serif;
-  text-align: center;
-}
-
-.heading-8 {
-  font-family: 'Days One', sans-serif;
-  text-align: center;
-}
-
-.paragraph-5 {
-  font-family: 'Days One', sans-serif;
-  text-align: center;
-}
-
-.heading-9 {
-  margin-top: -15px;
-  margin-bottom: 0px;
+.heading-featdesc {
   font-family: 'Days One', sans-serif;
   text-align: center;
 }
@@ -785,16 +851,38 @@ p {
   transition: opacity 200ms ease;
 }
 
+.image-cardgfx {
+  padding-top: 20px;
+}
+
+.card-imgcol {
+	height: auto;
+	margin-block: auto;
+	display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.phone-container {
+	max-width: 600px;
+}
+
 .image-4 {
   padding-top: 52px;
 }
 
+.laptop-imgcol {
+	width: 50%;
+	height: auto;
+	margin-block: auto;
+	display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
 .image-5 {
-  margin-right: -44px;
-  margin-left: -44px;
-  padding-top: 71px;
-  padding-right: 0px;
-  padding-left: 0px;
+  width: 100%;
+	height: 100%;
 }
 
 .column-4 {
@@ -905,11 +993,11 @@ p {
   }
 
   .image-3 {
-    padding-top: 232px;
+    padding-top: 26px;
   }
 
   .image-5 {
-    padding-top: 108px;
+    padding-top: 38px;
   }
 
   .column-4 {
@@ -993,9 +1081,14 @@ p {
     padding: 10px 0px 10px 10px;
   }
 
-  .image-5 {
-    margin-left: -107px;
-  }
+	.laptop-imgcol {
+		margin-left: 24%;
+	}
+
+	.paragraph-service-custom {
+		width: 80%;
+		margin-left: 14%;
+	}
 
   .column-4 {
     padding-top: 20px;
@@ -1004,6 +1097,11 @@ p {
   .image-6 {
     margin-top: 15px;
   }
+
+	.laptop-imgcol {
+		width: 100%;
+		margin-left: 1%;
+	}
 }
 
 @media screen and (max-width: 479px) {
@@ -1011,6 +1109,18 @@ p {
     margin-bottom: 13px;
     margin-left: 8px;
   }
+
+	.nav-container {
+		min-height: 86px;
+	}
+
+	.nav-logo {
+		margin-top: 8px;
+	}
+
+	.partners-container {
+		padding-bottom: 72px;
+	}
 
   .main-subtitle {
     text-align: center;
@@ -1063,6 +1173,20 @@ p {
     text-align: left;
   }
 
+	.laptop-imgcol {
+		margin-left: 24%;
+		width: 70%;
+	}
+
+	.paragraph-service-custom {
+		width: 95%;
+		margin-left: 5%;
+	}
+
+	.service-customer {
+		width: 100%;
+	}
+
   .container-2 {
     padding-right: 10px;
     padding-left: 10px;
@@ -1087,7 +1211,7 @@ p {
   }
 
   .image-3 {
-    padding-top: 0px;
+    padding-top: 20px;
   }
 
   .image-4 {
@@ -1099,6 +1223,11 @@ p {
     padding-top: 0px;
     padding-left: 0px;
   }
+
+	.laptop-imgcol {
+		width: 100%;
+		margin-left: 10%;
+	}
 
   .column-4 {
     padding-top: 24px;
